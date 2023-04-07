@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+:root {
+  --primary-color: #4267B2;
+  --secondary-color: #A9A9A9;
+  --background-color: #F2F2F2;
+  --text-color: #333333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-top: 20px;
+  background-color: var(--background-color);
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  width: 800px;
+  height: 900px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  animation: fade-in 1s ease-out;
+}
+
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card img {
+  margin: 5px auto;
+  width: 250px;
+  height: 250px;
+  display: block;
+}
+
+
+.info {
+  padding: 20px;
+}
+
+.info h2 {
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.info p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 5px 0;
+  text-align: center;
+}
+
+.info .description {
+  color: var(--secondary-color);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.cardfact {
+position: relative;
+width: 2000px;
+height: 1000px;
+margin: 80px auto;
+background-color: #F2F2F2;
+border-radius: 100px;
+box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+transition: all 0.3s ease-in-out;
+animation: fade-in 1s ease-out;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.cardfactp {
+padding: 30px;
+font-size: 75px;
+color: #222222;
+}
+
+.cardfactanswer {
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.cardfactanswerp {
+font-size: 1.5rem;
+color: #222222;
+}
+
+.cardfactanswerp > .upside-down {
+font-size: 1.2rem;
+display: inline-block;
+transform: rotate(180deg);
+color: #222222;
+text-align: center;
+
+}

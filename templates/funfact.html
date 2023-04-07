@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <title>Did you know?</title>
+</head>
+<body>
+    <h1 class="title">Did you know?</h1>
+    <div class="cardfact">
+        <p class="cardfactp">{{ fact }}</p>
+    </div>
+</body>
+</html>

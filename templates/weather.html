@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Steelcase Monitor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </head>
+  <body>
+    <h1 class="title">What's the weather like today?</h1>
+    <div class="container">
+      <div class="card">
+        <img src="{{ url_for('static', filename='icons/' ~ cluj_napoca['icon']) }}" alt="{{ cluj_napoca['description'] }}">
+        <div class="info">
+          <h2>{{ cluj_napoca['city'] }}</h2>
+          <p>{{ cluj_napoca['temperature'] }}°C (Feels like {{ cluj_napoca['feels_like'] }}°C) <br> Humidity: {{ cluj_napoca['humidity'] }}%<br></p>
+          <p class="description"><br>{{ cluj_napoca['description'] }}</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='icons/' ~ grand_rapids['icon']) }}" alt="{{ grand_rapids['description'] }}">
+        <div class="info">
+          <h2>{{ grand_rapids['city'] }}</h2>
+          <p>{{ grand_rapids['temperature'] }}°C (Feels like {{ grand_rapids['feels_like'] }}°C) <br> Humidity: {{ grand_rapids['humidity'] }}%<br></p>
+          <p class="description"><br>{{ grand_rapids['description'] }}</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

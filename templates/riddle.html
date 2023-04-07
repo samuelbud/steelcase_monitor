@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <title>Brain Teaser</title>
+</head>
+<body>
+    <h1 class="title">Brain Teaser</h1>
+    <div class="cardfact">
+        <p class="cardfactp">{{ riddle }}</p>
+        <div class="cardfactanswer">
+            <p class="cardfactanswerp">Don't cheat! But here's the answer if it's too frustrating: <br> <span class="upside-down">{{ answer }}</span></p>
+        </div>
+    </div>
+</body>
+</html>
